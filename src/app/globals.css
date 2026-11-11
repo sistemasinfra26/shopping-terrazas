@@ -20,7 +20,6 @@
     --color-emerald-300: oklch(84.5% 0.143 164.978);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-emerald-500: oklch(69.6% 0.17 162.48);
-    --color-emerald-900: oklch(37.8% 0.077 168.94);
     --color-emerald-950: oklch(26.2% 0.051 172.552);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -1717,9 +1716,6 @@
   .opacity-30 {
     opacity: 30%;
   }
-  .opacity-70 {
-    opacity: 70%;
-  }
   .opacity-75 {
     opacity: 75%;
   }
@@ -1847,11 +1843,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1909,9 +1900,6 @@
     :is(:where(.group):hover .group-hover\:text-zinc-950) {
       color: var(--color-zinc-950);
     }
-    :is(:where(.group):hover .group-hover\:opacity-100) {
-      opacity: 100%;
-    }
   }
   .selection\:bg-amber-400 ::selection {
     background-color: var(--color-amber-400);
@@ -1965,14 +1953,6 @@
     }
     .hover\:bg-black:hover {
       background-color: var(--color-black);
-    }
-    .hover\:bg-emerald-900\/40:hover {
-      background-color: color-mix(in srgb, oklch(37.8% 0.077 168.94) 40%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-emerald-900\/40:hover {
-        background-color: color-mix(in oklab, var(--color-emerald-900) 40%, transparent);
-      }
     }
     .hover\:bg-white\/\[0\.04\]:hover {
       background-color: color-mix(in srgb, #fff 4%, transparent);

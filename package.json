@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/build-css.mjs && next dev",
+    "dev": "next dev",
     "build:css": "node scripts/build-css.mjs",
-    "build": "node scripts/build-css.mjs && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
