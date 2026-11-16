@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-amber-200: #ffe8a3;
+  --color-amber-300: #ffd166;
+  --color-amber-400: #ffc22e;
+  --color-amber-500: #ffb303;
+  --color-amber-600: #e59e00;
+  --color-amber-700: #b87a00;
+  --color-amber-950: #382100;
+  --color-brand-yellow: #ffb303;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -14,7 +25,7 @@
   }
 
   ::selection {
-    background-color: #f59e0b;
+    background-color: #ffb303;
     color: #000000;
   }
 }
@@ -40,23 +51,23 @@
 
 .glass-card-hover:hover {
   background: rgba(24, 27, 33, 0.85);
-  border-color: rgba(245, 158, 11, 0.35);
+  border-color: rgba(255, 179, 3, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -15px rgba(245, 158, 11, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(255, 179, 3, 0.12);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #FFF6E5 0%, #F59E0B 50%, #D97706 100%);
+  background: linear-gradient(135deg, #FFF8E8 0%, #FFB303 50%, #E59E00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gold-glow {
-  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 0 35px -5px rgba(255, 179, 3, 0.3);
 }
 
 .gold-glow-sm {
-  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 15px -3px rgba(255, 179, 3, 0.35);
 }
 
 /* Custom sleek scrollbar */
@@ -74,6 +85,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d97706;
+  background: #ffb303;
 }
-

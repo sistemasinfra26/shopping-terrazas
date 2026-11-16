@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./tailwind.css";
 
 export const metadata: Metadata = {
   title: "Shopping Terrazas | Moda, Gastronomía y Entretenimiento Exclusivo",

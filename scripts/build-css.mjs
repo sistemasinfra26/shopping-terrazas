@@ -5,7 +5,7 @@ import path from 'path';
 
 export async function buildCss() {
   const inputCssPath = path.resolve('src/styles/input.css');
-  const outputCssPath = path.resolve('src/app/globals.css');
+  const outputCssPath = path.resolve('src/app/tailwind.css');
   
   const css = fs.readFileSync(inputCssPath, 'utf-8');
   const scanner = new Scanner({
@@ -22,7 +22,7 @@ export async function buildCss() {
   
   const output = compiler.build(candidates);
   fs.writeFileSync(outputCssPath, output, 'utf-8');
-  console.log(`Successfully compiled Tailwind CSS to ${outputCssPath} (${(output.length / 1024).toFixed(1)} KB, ${candidates.length} candidates scanned)`);
+  console.log(`Successfully compiled Tailwind utilities to ${outputCssPath} (${(output.length / 1024).toFixed(1)} KB, ${candidates.length} candidates scanned)`);
 }
 
 if (process.argv[1] && process.argv[1].endsWith('build-css.mjs')) {
@@ -31,4 +31,3 @@ if (process.argv[1] && process.argv[1].endsWith('build-css.mjs')) {
     process.exit(1);
   });
 }
-
