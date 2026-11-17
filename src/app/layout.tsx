@@ -3,9 +3,8 @@ import "./globals.css";
 import "./tailwind.css";
 
 export const metadata: Metadata = {
-  title: "Shopping Terrazas | Moda, Gastronomía y Entretenimiento Exclusivo",
-  description:
-    "El centro comercial más moderno y exclusivo. Más de 150 marcas, terrazas gastronómicas al aire libre, cines de última generación y experiencias únicas.",
+  title: "Shopping Terrazas | Próximamente",
+  description: "Muy pronto, Shopping Terrazas. Estamos preparando una nueva experiencia.",
   icons: {
     icon: "/logo.png",
   },
