@@ -57,7 +57,7 @@ export function Footer() {
 
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/shoppingterrazas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-zinc-900 border border-white/10 flex items-center justify-center text-zinc-400 hover:text-[#ffb303] hover:border-[#ffb303]/40 transition-colors"
@@ -66,7 +66,7 @@ export function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/shopping-terrazas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-zinc-900 border border-white/10 flex items-center justify-center text-zinc-400 hover:text-[#ffb303] hover:border-[#ffb303]/40 transition-colors font-bold text-xs"
@@ -75,9 +75,10 @@ export function Footer() {
                 in
               </a>
               <a
-                href="mailto:comercial@shoppingterrazas.com"
+                href="mailto:rrhh@shoppingterrazas.com"
+                title="rrhh@shoppingterrazas.com"
                 className="w-9 h-9 rounded-xl bg-zinc-900 border border-white/10 flex items-center justify-center text-zinc-400 hover:text-[#ffb303] hover:border-[#ffb303]/40 transition-colors"
-                aria-label="Email Comercial"
+                aria-label="Email de Recursos Humanos"
               >
                 <Mail className="w-4 h-4" />
               </a>
